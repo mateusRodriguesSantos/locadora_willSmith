@@ -8,6 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import BO.ImovelBO;
+import Bean.EnderecoBean;
+import Bean.ImovelBean;
+import DAO.AnuncianteDAO;
+import DAO.EnderecoDAO;
 
 @WebServlet("DetalheAnuncioServlet")
 public class DetalheAnuncioServlet extends HttpServlet {
@@ -24,7 +28,11 @@ public class DetalheAnuncioServlet extends HttpServlet {
             
             ImovelBO i = new ImovelBO();
             
-            req.setAttribute("list", i.searchImovel(Integer.parseInt(id)));
+            ImovelBean imovel = i.searchImovel(Integer.parseInt(id));
+            
+            req.setAttribute("imovel", imovel);
+            req.setAttribute("anunciante", imovel.getAnunciante());
+            req.setAttribute("endereco", imovel.getEndereco());
             req.getRequestDispatcher("/detalhe_anuncio.jsp").forward(req, resp);
             
         } catch (SQLException e) {
