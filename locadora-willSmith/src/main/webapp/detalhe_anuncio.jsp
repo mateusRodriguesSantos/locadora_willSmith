@@ -53,7 +53,7 @@
                 <div id="Imagem">
                     <img src="${imovel.imagePath}" alt="">
                 </div>
-                <ul>
+                <ul id="informacoes">
                     <li>Descrição: <c:out value="${imovel.descricao}"></c:out></li>
                     <li>Disponibilidade: <c:out value="${imovel.disponibilidade}"></c:out></li>
                     <li>Tipo: <c:out value="${imovel.tipo}"></c:out></li>
