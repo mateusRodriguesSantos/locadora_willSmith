@@ -8,11 +8,16 @@ public class AnuncianteBean {
     private String email;
     private String senha;
 
-    // Constructors
+    /**
+    * This Constructor AnuncianteBean
+    */
     public AnuncianteBean(){
 
     }
     
+    /**
+    * This Constructor AnuncianteBean
+    */
     public AnuncianteBean(int idAnunciante,String nome, String telefone, String email, String senha) {
         this.nome = nome;
         this.idAnunciante = idAnunciante;
@@ -21,6 +26,7 @@ public class AnuncianteBean {
         this.senha = senha;
     }
 
+    //Getters and setters
     public String getNome() {
         return nome;
     }

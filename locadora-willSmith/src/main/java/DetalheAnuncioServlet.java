@@ -8,10 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import BO.ImovelBO;
-import Bean.EnderecoBean;
 import Bean.ImovelBean;
-import DAO.AnuncianteDAO;
-import DAO.EnderecoDAO;
+
 
 @WebServlet("DetalheAnuncioServlet")
 public class DetalheAnuncioServlet extends HttpServlet {
@@ -27,7 +25,7 @@ public class DetalheAnuncioServlet extends HttpServlet {
             String id = req.getParameter("idImovel");
             
             ImovelBO i = new ImovelBO();
-            
+        
             ImovelBean imovel = i.searchImovel(Integer.parseInt(id));
             
             req.setAttribute("imovel", imovel);
