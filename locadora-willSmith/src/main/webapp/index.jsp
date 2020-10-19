@@ -43,7 +43,7 @@
                         <option value="Comercial">Comercial</option>
                     </select>
                 </div>
-                <input id="Butao" class="w3-btn w3-green w3-round-xlarge" type="submit" value="Buscar">
+                <input id="Butao" class="w3-green w3-round-xlarge" type="submit" value="Buscar">
             </div>
         </form>
     </div>

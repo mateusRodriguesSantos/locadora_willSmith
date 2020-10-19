@@ -51,7 +51,7 @@
         <div class="Anuncio w3-container w3-round-xlarge" >
             <div id="Conteudo">
                 <c:forEach items="${list}" var="list">
-                <div id="Divisao">
+                <div id="Divisao" class="w3-round-xlarge">
                     <div id="Imagem">
                         <img class="w3-round" src="${list.imagePath}" alt="">
                     </div>
@@ -74,11 +74,11 @@
                             </li>
                         </ul>
                     </div>
+                    <form class="FormEnviar" action="DetalheAnuncioServlet" method="GET">
+                        <input type="hidden" value="${list.idImovel}" name="idImovel">
+                        <input class="w3-button w3-green w3-round-xlarge" type="submit" value="Visitar">
+                    </form>
                 </div>
-                <form class="FormEnviar" action="DetalheAnuncioServlet" method="GET">
-                    <input type="hidden" value="${list.idImovel}" name="idImovel">
-                    <input class="w3-button w3-black w3-round-xlarge" type="submit" value="Visitar">
-                </form>
             </c:forEach>
         </div>
     </div>

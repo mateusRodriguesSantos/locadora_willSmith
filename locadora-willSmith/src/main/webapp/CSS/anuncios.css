@@ -63,6 +63,7 @@
 
 .Anuncio #Conteudo #Divisao{
     margin-top: 30px; 
+    background-color: #FFF7F5;
 } 
 
 .Anuncio #Conteudo #Imagem img{
@@ -86,15 +87,14 @@
    list-style-type: none;
 } 
 
-.Anuncio .FormEnviar input{ 
+.Anuncio #Conteudo #Divisao .FormEnviar input{ 
     margin-bottom: 20px;
     margin-left: 160px;
-    color: aliceblue;
 }
 
 @media screen and (min-width: 1000px) {
 	.Conteudo{
-        height: 200px; 
+        height: 120px; 
         width: 97vw; 
         margin-top: 20px;
         margin-left: 20px; 
@@ -109,13 +109,13 @@
         .Conteudo .Elementos #Butao{ 
             width: 150px;
             height: 30px;
-            margin-top: 60px;
+            margin-top: 10px;
             margin-right: 70px;
             border: none;
         }
         
         .Conteudo #OquePrecisa p{
-            margin-top: 14px;
+            margin-top: -60px;
             padding: 0;
             text-align: left;
             font-family: sans-serif;
@@ -133,7 +133,7 @@
             font-family: sans-serif;
             font-size: 30px;
             margin-left: 100px;
-            margin-top: 12px;
+            margin-top: -60px;
         }
 
         .Anuncio {
@@ -164,11 +164,13 @@
             height: 300px;
             margin: auto; 
             margin-top: 20px;
+            margin-left: 10px;
         } 
 
-         .Anuncio .FormEnviar input{ 
-            margin-bottom: 20px;
+        .Anuncio #Conteudo #Divisao .FormEnviar input{ 
             float: right;
-            color: aliceblue;
+            margin-right: 20px;
+            margin-top: -50px;
+            
         }
 }

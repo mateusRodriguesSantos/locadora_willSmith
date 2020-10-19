@@ -15,6 +15,7 @@ align-content: center;
     margin-bottom: 100px;
     width: 150px;
     margin-left: 125px;
+    border: none;
 }
 
 .Conteudo #OquePrecisa p{
@@ -48,10 +49,12 @@ align-content: center;
 }
 
 @media screen and (min-width: 1000px) {
-	.Conteudo{
-        height: 200px; 
+    .Conteudo{
+        height: 120px; 
         width: 97vw; 
-        margin: auto;
+        margin-top: 20px;
+        margin-left: 20px; 
+        margin-right: 100px; 
         align-content: center;
     }
         
@@ -62,13 +65,13 @@ align-content: center;
         .Conteudo .Elementos #Butao{ 
             width: 150px;
             height: 30px;
-            margin-top: 60px;
+            margin-top: 10px;
             margin-right: 70px;
             border: none;
         }
         
         .Conteudo #OquePrecisa p{
-            margin-top: 14px;
+            margin-top: -60px;
             padding: 0;
             text-align: left;
             font-family: sans-serif;
@@ -86,6 +89,7 @@ align-content: center;
             font-family: sans-serif;
             font-size: 30px;
             margin-left: 100px;
-            margin-top: 12px;
+            margin-top: -60px;
         }
+
 }
