@@ -1,0 +1,91 @@
+﻿.Conteudo{
+height: 330px; 
+width: 450px;
+margin-left: 20px; 
+margin-right: 100px; 
+align-content: center;
+}
+
+.Conteudo .Elementos{ 
+    display: grid;
+}
+
+.Conteudo .Elementos #Butao{ 
+    margin-top: 10px;
+    margin-bottom: 100px;
+    width: 150px;
+    margin-left: 125px;
+}
+
+.Conteudo #OquePrecisa p{
+    margin-top: -35px;
+    vertical-align: auto;
+    padding: 0;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.Conteudo #OquePrecisa select{
+    margin-top: 8px;
+    float: left;
+    width: 400px;
+    height: 30px;
+ }
+
+.Conteudo #QualTipo select{
+    margin-top: 8px;
+    float: left;
+    width: 400px;
+    height: 30px;
+}
+
+.Conteudo #QualTipo p{
+    margin-top: 8px;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 1000px) {
+	.Conteudo{
+        height: 200px; 
+        width: 97vw; 
+        margin: auto;
+        align-content: center;
+    }
+        
+        .Conteudo .Elementos{ 
+            display: flex;
+        }
+        
+        .Conteudo .Elementos #Butao{ 
+            width: 150px;
+            height: 30px;
+            margin-top: 60px;
+            margin-right: 70px;
+            border: none;
+        }
+        
+        .Conteudo #OquePrecisa p{
+            margin-top: 14px;
+            padding: 0;
+            text-align: left;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        
+        .Conteudo #QualTipo select{
+            margin-left: 100px;
+            margin-top: 9px;
+        }
+        
+        .Conteudo #QualTipo p{
+            padding: 0;
+            text-align: left;
+            font-family: sans-serif;
+            font-size: 30px;
+            margin-left: 100px;
+            margin-top: 12px;
+        }
+}
